@@ -99,7 +99,7 @@ export default class Post extends Component {
               <Edit text={this.props.text}
                     id= {this.props.id}
                     hideEdit={ this.hideEdit }
-                    updatePostFn={ this.updatePostFn }
+                    updatePostFn={ this.props.updatePostFn }
                     deletePostFn={ this.deletePostFn }
                      />
             :
