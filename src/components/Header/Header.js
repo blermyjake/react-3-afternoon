@@ -1,19 +1,18 @@
-import React, { Component } from 'react';
-import CompanyIcon from 'react-icons/lib/md/filter-hdr';
-import ProfileIcon from 'react-icons/lib/md/person-outline';
+import React, { Component } from "react";
+import CompanyIcon from "react-icons/lib/md/filter-hdr";
+import ProfileIcon from "react-icons/lib/md/person-outline";
 
-import './Header.css';
+import "./Header.css";
 
-import Search from './Search/Search';
+import Search from "./Search/Search";
 
-//////////////////////////////////////////////////////// THIS COMPONENT IS BEING RENDERED IN THE *APP* COMPONENT
+//////////////////////////////////////////////////////// THIS COMPONENT IS BEING RENDERED IN THE *APP* COMPONENT this is the header
 
 export default class Header extends Component {
   render() {
     return (
       <section className="Header__parent">
         <section className="Header__content">
-
           {/* Displays the mountain icon in the header */}
           <div className="Header__company-info">
             <CompanyIcon id="Header__company-icon" />
@@ -29,9 +28,8 @@ export default class Header extends Component {
               <ProfileIcon />
             </div>
           </div>
-
         </section>
       </section>
-    )
+    );
   }
 }
